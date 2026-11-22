@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>115 學測公民與社會高頻考點精粹講義</title>
+  <style>
+    :root {
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --text-main: #1E293B;
+      --text-muted: #475569;
+      --primary: #1E3A8A;
+      --primary-light: #DBEAFE;
+      --accent: #2563EB;
+      --border-color: #CBD5E1;
+      --highlight-bg: #FEF08A;
+      --warning-bg: #FFFBEB;
+      --warning-border: #F59E0B;
+      --warning-title: #B45309;
+      --info-bg: #EFF6FF;
+      --info-border: #3B82F6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Noto Sans TC", "Microsoft JhengHei", -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.72;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    header.main-header {
+      background: linear-gradient(135deg, #1E3A8A 0%, #0F4C81 100%);
+      color: #FFFFFF;
+      padding: 32px 28px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 12px rgba(30, 58, 138, 0.16);
+    }
+
+    header.main-header h1 {
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    header.main-header p {
+      font-size: 1rem;
+      color: #E2E8F0;
+    }
+
+    .card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      color: var(--primary);
+      border-left: 5px solid var(--accent);
+      padding-left: 12px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .badge {
+      font-size: 0.8rem;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      color: #0F172A;
+      margin: 20px 0 10px 0;
+      padding-bottom: 4px;
+      border-bottom: 1px dashed var(--border-color);
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    mark {
+      background-color: var(--highlight-bg);
+      color: #1E293B;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+
+    strong {
+      color: #0F172A;
+      font-weight: 700;
+    }
+
+    /* Tables */
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 14px 0 18px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.94rem;
+      background-color: #FFFFFF;
+    }
+
+    th, td {
+      border: 1px solid var(--border-color);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #F1F5F9;
+      color: var(--primary);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #FAFAF9;
+    }
+
+    /* Callout Boxes */
+    .callout-warning {
+      background-color: var(--warning-bg);
+      border-left: 4px solid var(--warning-border);
+      border-top: 1px solid #FDE68A;
+      border-right: 1px solid #FDE68A;
+      border-bottom: 1px solid #FDE68A;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+
+    .callout-title {
+      font-weight: 800;
+      color: var(--warning-title);
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+
+    .callout-info {
+      background-color: var(--info-bg);
+      border-left: 4px solid var(--info-border);
+      border-top: 1px solid #BFDBFE;
+      border-right: 1px solid #BFDBFE;
+      border-bottom: 1px solid #BFDBFE;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 16px 0;
+    }
+
+    .callout-info-title {
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+
+    /* Flow Cards */
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .flow-step {
+      background: #F8FAFC;
+      border: 1px solid #CBD5E1;
+      border-top: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 0.9rem;
+    }
+
+    .flow-step .step-num {
+      font-weight: 800;
+      color: var(--accent);
+      font-size: 0.85rem;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    /* Figures */
+    figure.img-box {
+      margin: 18px 0;
+      padding: 12px;
+      background-color: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    figure.img-box img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 12px auto;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    /* Print Optimization */
+    @media print {
+      body {
+        background-color: #FFFFFF;
+        padding: 0;
+        font-size: 11pt;
+      }
+      .container {
+        max-width: 100%;
+      }
+      header.main-header {
+        background: #1E3A8A !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        box-shadow: none;
+        padding: 18px 20px;
+      }
+      .card {
+        box-shadow: none;
+        border: 1px solid #94A3B8;
+        padding: 16px 20px;
+        margin-bottom: 18px;
+        break-inside: avoid;
+      }
+      table, figure.img-box, .callout-warning, .callout-info, .flow-grid {
+        break-inside: avoid;
+      }
+      mark {
+        background-color: #FEF08A !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      th {
+        background-color: #F1F5F9 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <h1>115 學測公民與社會高頻考點精粹講義</h1>
+      <p>涵蓋單元：所有權與公平正義、行政程序法、政府體制與我國體制、選舉制度、外部性與市場失靈、國際貿易市場均衡</p>
+    </header>
+
+    <!-- 主題一：所有權概念、社會化原則與積極平權措施 -->
+    <section class="card">
+      <h2>主題一：所有權、社會化原則與積極平權措施 <span class="badge">憲法與民法核心</span></h2>
+
+      <h3>1. 所有權社會化原則</h3>
+      <ul>
+        <li><strong>核心內涵</strong>：政府為增進<mark>公共利益</mark>，得依法對個人所有權進行合理限制。</li>
+        <li><strong>實例</strong>：興建捷運、高鐵等公共建設而依法<mark>徵收</mark>人民土地。</li>
+      </ul>
+
+      <h3>2. 群體權利與積極平權措施</h3>
+      <ul>
+        <li><strong>法律基礎（司法院釋字第 485 號解釋）</strong>：《憲法》第 7 條平等原則保障的是<mark>實質平等</mark>而非機械形式平等；立法機關可斟酌事物性質差異為合理差別對待。</li>
+        <li><strong>核心主張</strong>：
+          <ol>
+            <li>以「<mark>不同情況給予不同對待</mark>」作為公平正義另一標準。</li>
+            <li>給予結構弱勢群體（族群、性別、性傾向、身心障礙者等）更多資源，匡正不利處境。</li>
+            <li>制定公共政策與分配資源時，考量群體差異性，採行<mark>積極平權措施</mark>（積極性差別待遇）。</li>
+          </ol>
+        </li>
+        <li><strong>政策實例</strong>：
+          <ul>
+            <li><strong>原住民族參政權</strong>：突破單純「一人一票、票票等值」限制，設定<mark>原住民立委席次</mark>。</li>
+            <li><strong>原住民族土地正義</strong>：開發或劃設原住民族傳統領域，須取得<mark>原住民族同意</mark>。</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>3. 《民法》所有權的意義與特性</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>面向</th>
+              <th>概念／特性</th>
+              <th>法律內涵與實例</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="2"><strong>意義</strong><br>（完全物權）</td>
+              <td><strong>積極權</strong></td>
+              <td>所有權人於法令限制內，有自由<mark>使用、收益、處分</mark>標的物之權利。</td>
+            </tr>
+            <tr>
+              <td><strong>消極權</strong></td>
+              <td>所有權人於法令限制內，有<mark>排除他人干涉</mark>之權利。</td>
+            </tr>
+            <tr>
+              <td rowspan="4"><strong>特性</strong></td>
+              <td><strong>直接支配性</strong></td>
+              <td>所有權人可依意思直接支配標的物（如：使用自己的手機）。</td>
+            </tr>
+            <tr>
+              <td><strong>絕對性（對世性）</strong></td>
+              <td>可對「任何人」主張所有權（不同於債權的「相對性」）。</td>
+            </tr>
+            <tr>
+              <td><strong>排他性</strong></td>
+              <td>一物一權主義：同一標的物不會同時存在兩個所有權，且可排除他人干涉。</td>
+            </tr>
+            <tr>
+              <td><strong>優先性</strong></td>
+              <td>除法律另有規定外，所有權（物權）效力<mark>優先於債權</mark>（如：先訂買賣契約取得債權，但後訂契約並完成所有權移轉者，由取得所有權者取得標的物）。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout-warning">
+        <div class="callout-title">⚠️ 易錯觀念／大考陷阱</div>
+        <ul>
+          <li><strong>物權絕對性 vs. 債權相對性</strong>：所有權屬物權，具有「對世性／絕對性」；買賣契約產生的請求權屬債權，僅具「相對性」。</li>
+          <li><strong>形式平等 vs. 實質平等</strong>：積極平權措施看似「差別待遇」，但目的在消除結構性不平等，符合釋字第 485 號解釋之<mark>實質平等</mark>。</li>
+        </ul>
+      </div>
+
+      <figure class="img-box">
+        <img src="image_8c8a59.jpg" alt="民法所有權的積極消極意義與直接支配、絕對、排他、優先性說明圖">
+        <figcaption>圖 1：《民法》所有權意義與四大特性（注意物權效力優先於債權之實例）。</figcaption>
+      </figure>
+    </section>
+
+    <!-- 主題二：行政程序的重要性 -->
+    <section class="card">
+      <h2>主題二：行政程序的重要性 <span class="badge">公法必考</span></h2>
+      <p><strong>定義</strong>：為達實質正義，行政行為須先有正當程序。正當行政程序涵蓋<mark>民主程序</mark>、<mark>公正程序</mark>、<mark>公開程序</mark>三大原則。</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>程序原則</th>
+              <th>核心內涵</th>
+              <th>具體制度與學測實例</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>民主程序</strong></td>
+              <td>國家權力發動前，應取得被統治者或其代表同意／參與，並給予利害關係人參與機會。</td>
+              <td>
+                • <strong>陳述意見</strong>：不利處分前給予陳述機會（如：學校記過前通知申訴機會）。<br>
+                • <strong>聽證</strong>：公開、言詞辯論，程序嚴格，結果具有<mark>約束主管機關</mark>效力，主管須說明採納或不採納理由。<br>
+                • <strong>公聽會</strong>：蒐集民意、邀當事人／利害關係人／專家座談，程序較聽證寬鬆。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>公正程序</strong></td>
+              <td>行政行為不得偏頗或恣意，恪遵差別待遇禁止原則。</td>
+              <td>
+                • <strong>組織合法性</strong>：依法組成，確保多元與專業觀點（如：行政院各部會委員會單一性別比例<mark>不得低於 1/3</mark>；高中校務會議學生代表<mark>不得少於 8%</mark>）。<br>
+                • <strong>迴避制度</strong>：公務員涉利益衝突時應迴避（含<mark>自行迴避</mark>、<mark>申請迴避</mark>、<mark>命令迴避</mark>；涉及本人、配偶、前配偶、四親等內血親、三親等內姻親等）。<br>
+                • <strong>禁止程序外接觸</strong>：除職務必要外，不得與當事人或利益代表為程序外接觸。
+              </td>
+            </tr>
+            <tr>
+              <td><strong>公開程序</strong></td>
+              <td>保障人民知的權利，避免黑箱作業（依法核定國家機密等例外）。</td>
+              <td>
+                • <strong>政府資訊公開</strong>：依法公開與人民權益相關資訊。<br>
+                • <strong>通知當事人</strong>：事前預告、事後告知決定結果與<mark>救濟途徑</mark>（如：拆除危樓通知書載明處分、法律依據與救濟途徑）。<br>
+                • <strong>閱覽卷宗</strong>：利害關係人主張或維護法律上利益必要時，得申請閱覽、抄寫、複印或攝影。
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout-warning">
+        <div class="callout-title">⚠️ 易錯觀念／大考陷阱</div>
+        <ul>
+          <li><strong>聽證 vs. 公聽會</strong>：<strong>聽證</strong>較接近司法程序、採公開言詞辯論、結果具<mark>約束力</mark>；<strong>公聽會</strong>則以座談蒐集意見為主，程序較寬鬆。</li>
+        </ul>
+      </div>
+
+      <figure class="img-box">
+        <img src="螢幕擷取畫面 2026-11-22 190745.jpg" alt="行政程序重要性之民主程序、公正程序與公開程序原則整理表">
+        <figcaption>圖 2：正當行政程序三大原則（民主、公正、公開）及其法定制度與實例。</figcaption>
+      </figure>
+    </section>
+
+    <!-- 主題三：總統制與我國政府體制 -->
+    <section class="card">
+      <h2>主題三：總統制與我國政府體制 <span class="badge">憲政體制比較</span></h2>
+
+      <h3>1. 總統制（以美國為例）核心特徵</h3>
+      <ul>
+        <li><strong>精神與運作</strong>：民選總統握行政權、民選國會議員握立法權，各自向人民負責。</li>
+        <li><strong>實權元首</strong>：總統握有實權、負最高政治責任，為國家元首兼最高行政首長，公布法律<mark>不需要</mark>部會首長副署。</li>
+        <li><strong>行政立法分立</strong>：任期固定，總統<mark>不能解散國會</mark>，國會亦<mark>無不信任投票</mark>；國會議員不得兼任部會首長；國會以預算、人事同意權、彈劾權制衡總統。</li>
+        <li><strong>否決權（覆議權）</strong>：法案送達 10 日內退回國會，參、眾兩院須各以 <mark>2/3 多數</mark>議決才能推翻否決。</li>
+        <li><strong>彈劾制度</strong>：針對總統違法行為，眾議院 <mark>1/2 多數</mark>提彈劾案，參議院 <mark>2/3 以上</mark>同意則解職。</li>
+      </ul>
+
+      <h3>2. 我國政府體制運作重點</h3>
+      <div class="flow-grid">
+        <div class="flow-step">
+          <span class="step-num">雙首長分工</span>
+          總統民選向人民負責；行政院長由總統直接任命、向<mark>立法院</mark>負責，為最高行政首長。
+        </div>
+        <div class="flow-step">
+          <span class="step-num">覆議制度</span>
+          行政院認窒礙難行，經<mark>總統核可</mark>移請立法院覆議；全體立委 <mark>1/2 以上</mark>維持原案，行政院長應接受。
+        </div>
+        <div class="flow-step">
+          <span class="step-num">彈劾制度</span>
+          立法院提出總統、副總統彈劾案（<mark>1/2 以上提議、2/3 以上決議</mark>），由司法院大法官組成<mark>憲法法庭</mark>審理，成立即解職。
+        </div>
+        <div class="flow-step">
+          <span class="step-num">不信任案與解散</span>
+          立法院對行政院長提不信任案（<mark>1/3 連署提案、1/2 贊成通過</mark>），院長應於 <mark>10 日內</mark>辭職，並得呈請總統<mark>被動解散立法院</mark>。
+        </div>
+        <div class="flow-step">
+          <span class="step-num">部分副署制度</span>
+          總統公布法律、發布命令須經行政院長及有關部會首長副署；但任命行政院長、經立法院同意之人事任免、解散立法院<mark>不需副署</mark>。
+        </div>
+      </div>
+
+      <h3>3. 美國總統制 vs. 我國體制關鍵差異</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>比較項目</th>
+              <th>美國總統制</th>
+              <th>我國政府體制</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>行政首長結構</strong></td>
+              <td>單一實權元首（總統兼最高行政首長）</td>
+              <td>總統與行政院長雙首長運作，行政院長對立法院負責</td>
+            </tr>
+            <tr>
+              <td><strong>國會解散與不信任</strong></td>
+              <td>無</td>
+              <td>有不信任投票制度，且立法院倒閣時總統可<mark>被動解散立法院</mark></td>
+            </tr>
+            <tr>
+              <td><strong>副署制度</strong></td>
+              <td>無</td>
+              <td><mark>部分副署制度</mark>（依法公布法律、發布命令需副署；任免閣揆、解散立法院等免副署）</td>
+            </tr>
+            <tr>
+              <td><strong>總統彈劾審理機關</strong></td>
+              <td>眾議院提案、參議院審理</td>
+              <td>立法院提案、司法院大法官召開<mark>憲法法庭</mark>審理</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <figure class="img-box">
+        <img src="螢幕擷取畫面 2026-11-22 185800.jpg" alt="總統制以美國為例之精神、運作方式、特徵與優缺點">
+        <figcaption>圖 3：總統制（美國）行政與立法權力分立、制衡機制與優缺點總覽。</figcaption>
+      </figure>
+
+      <figure class="img-box">
+        <img src="image_8c9d02.jpg" alt="我國體制雙首長、行政立法分立、覆議、彈劾、信任與部分副署制度">
+        <figcaption>圖 4：我國憲政體制運作架構、倒閣與被動解散立法院流程及部分副署規定。</figcaption>
+      </figure>
+    </section>
+
+    <!-- 主題四：選舉制度與政黨體系影響 -->
+    <section class="card">
+      <h2>主題四：選舉制度與政黨體系影響 <span class="badge">115 學測高頻</span></h2>
+
+      <h3>1. 比例代表制重點</h3>
+      <ul>
+        <li><strong>規則</strong>：又稱政黨比例代表制、名單比例代表制；各黨列候選人名單，選民投給<mark>政黨</mark>，依得票率按比例分配席次，並設<mark>選舉門檻</mark>。</li>
+        <li><strong>優缺點</strong>：席次與政黨實力相符、能反映多元利益（有利小黨）；但易造成<mark>小黨林立</mark>，導致議事效能低落或政局不穩。</li>
+      </ul>
+
+      <figure class="img-box">
+        <img src="螢幕擷取畫面 2026-11-22 185849.jpg" alt="比例代表制規則、得票比例分配席次計算範例與優缺點">
+        <figcaption>圖 5：比例代表制依政黨得票比例分配席次範例與優缺點分析。</figcaption>
+      </figure>
+
+      <h3>2. 各類選舉制度對小黨與政黨體系之影響</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">選舉制度類型</th>
+              <th>對小黨與政黨體系之主要影響</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3"><strong>多數決制</strong></td>
+              <td><strong>單一選區相對多數決</strong></td>
+              <td>不必過半、勝者全拿；得票與席次易不成比例，有代表性／正當性疑慮；<mark>不利小黨，易形成兩黨制</mark>。</td>
+            </tr>
+            <tr>
+              <td><strong>複數選區相對多數決</strong></td>
+              <td>較單一選區<mark>對小黨有利</mark>，但易有同黨相爭，且較易出現偏激政策與競選手段。</td>
+            </tr>
+            <tr>
+              <td><strong>絕對多數決</strong></td>
+              <td><mark>不利小黨，易形成多黨聯盟</mark>。</td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>比例代表制</strong></td>
+              <td>較能反映不同利益與意見，<mark>有利小黨生存</mark>；但易小黨林立、形成多黨制，也可能出現偏激極端訴求。</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><strong>混合制</strong></td>
+              <td><strong>並立制</strong></td>
+              <td>若單一選區席次多於比例代表制席次，<mark>不利小黨、有利大黨</mark>。</td>
+            </tr>
+            <tr>
+              <td><strong>聯立制</strong></td>
+              <td>政黨得票率與席次分配比例相符，<mark>較有利於小黨生存</mark>。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <figure class="img-box">
+        <img src="螢幕擷取畫面 2026-11-22 185905.jpg" alt="多數決制、比例代表制與混合制對選舉與政黨體系之影響圖解">
+        <figcaption>圖 6：多數決制、比例代表制與混合制（並立制、聯立制）對小黨與政黨體系影響總表。</figcaption>
+      </figure>
+    </section>
+
+    <!-- 主題五：外部性與市場失靈 -->
+    <section class="card">
+      <h2>主題五：外部性與市場失靈 <span class="badge">經濟學必考圖表</span></h2>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>比較項目</th>
+              <th>外部成本（負外部性）</th>
+              <th>外部效益（正外部性）</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>意義</strong></td>
+              <td>經濟活動對他人產生<mark>負面</mark>影響。</td>
+              <td>經濟活動對他人產生<mark>正面</mark>影響。</td>
+            </tr>
+            <tr>
+              <td><strong>計算公式</strong></td>
+              <td><mark>外部成本＝社會成本－私人成本</mark><br>（私人供給線 $S$ 到社會供給線 $S^*$ 垂直距離）</td>
+              <td><mark>外部效益＝社會效益－私人效益</mark><br>（私人需求線 $D$ 到社會需求線 $D^*$ 垂直距離）</td>
+            </tr>
+            <tr>
+              <td><strong>未考量時對價量影響</strong></td>
+              <td>產量過多（$Q &gt; Q^*$）、價格偏低（$P &lt; P^*$）。</td>
+              <td>消費量過少（$Q &lt; Q^*$）、價格偏低（$P &lt; P^*$）。</td>
+            </tr>
+            <tr>
+              <td><strong>社會福利與無謂損失</strong></td>
+              <td>社會福利＝總效益－總成本；未考量時產生<mark>無謂損失 $B$</mark>（社會福利由 $A$ 降為 $A - B$），造成市場失靈。</td>
+              <td>未考量時產生<mark>無謂損失 $L$</mark>（社會福利由 $I + K + L$ 降為 $I + K$），造成市場失靈。</td>
+            </tr>
+            <tr>
+              <td><strong>政府補救措施</strong></td>
+              <td>透過<mark>課稅</mark>或<mark>直接管制</mark>將外部成本內部化（如：對污染開罰或課稅）。</td>
+              <td>透過<mark>補貼</mark>增加行為者從事外部效益誘因（如：民眾種花美化市容給予補貼）。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout-info">
+        <div class="callout-info-title">💡 圖表判讀口訣</div>
+        <ul>
+          <li><strong>外部成本看供給線（$S \rightarrow S^*$）</strong>：未內部化時「多產（$Q &gt; Q^*$）、低價（$P &lt; P^*$）」，政府用<strong>課稅／管制</strong>矯正。</li>
+          <li><strong>外部效益看需求線（$D \rightarrow D^*$）</strong>：未內部化時「少消費（$Q &lt; Q^*$）、低價（$P &lt; P^*$）」，政府用<strong>補貼</strong>矯正。</li>
+        </ul>
+      </div>
+
+      <figure class="img-box">
+        <img src="螢幕擷取畫面 2026-11-22 190006.jpg" alt="外部成本均衡價量、社會福利與無謂損失圖解">
+        <figcaption>圖 7：外部成本對均衡價量（$Q, P$ vs. $Q^*, P^*$）與社會福利、無謂損失 $B$ 之影響。</figcaption>
+      </figure>
+
+      <figure class="img-box">
+        <img src="螢幕擷取畫面 2026-11-22 190016.jpg" alt="外部效益均衡價量、社會福利與無謂損失圖解">
+        <figcaption>圖 8：外部效益對均衡價量（$Q, P$ vs. $Q^*, P^*$）與社會福利、無謂損失 $L$ 之影響。</figcaption>
+      </figure>
+    </section>
+
+    <!-- 主題六：國際貿易的市場均衡 -->
+    <section class="card">
+      <h2>主題六：國際貿易的市場均衡 <span class="badge">貿易利得必考</span></h2>
+      <ul>
+        <li><strong>均衡意義</strong>：出口供給線與進口需求線交點代表國際貿易均衡價格與數量；貿易量即出口國出口量與進口國進口量。</li>
+        <li><strong>核心結論</strong>：兩國進行貿易時，無論是<mark>出口國或進口國，其總福利（總剩餘）皆增加</mark>（即產生貿易利得）。</li>
+      </ul>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>國家類型</th>
+              <th>貿易後價量變化（以講義範例為例）</th>
+              <th>剩餘與總福利變化</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>出口國</strong><br>（如：臺灣自行車）</td>
+              <td>國際均衡價格（80）高於國內均衡價格（60）：<br>• <strong>總產量增加</strong>（100 → 150）<br>• <strong>國內消費減少</strong>（100 → 70）<br>• 產生<mark>超額供給</mark> 80（150－70）</td>
+              <td>• 生產者剩餘<mark>增加</mark>（＋$B+D$）<br>• 消費者剩餘<mark>減少</mark>（－$B$）<br>• <strong>總剩餘增加</strong>（＋$D$）</td>
+            </tr>
+            <tr>
+              <td><strong>進口國</strong><br>（如：日本自行車）</td>
+              <td>國際均衡價格（80）低於國內均衡價格（100）：<br>• <strong>總產量減少</strong>（160 → 120）<br>• <strong>國內消費增加</strong>（160 → 200）<br>• 產生<mark>超額需求</mark> 80（200－120）</td>
+              <td>• 消費者剩餘<mark>增加</mark>（＋$F+H$）<br>• 生產者剩餘<mark>減少</mark>（－$F$）<br>• <strong>總剩餘增加</strong>（＋$H$）</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <figure class="img-box">
+        <img src="image_8c9167.jpg" alt="國際貿易市場均衡意義、出口國與進口國產量消費變化及利得損失表">
+        <figcaption>圖 9：國際貿易均衡概念及出口國、進口國量變與剩餘變化彙整。</figcaption>
+      </figure>
+
+      <figure class="img-box">
+        <img src="image_8c91bd.jpg" alt="臺灣自行車出口市場、進出口市場與日本自行車進口市場供需與剩餘圖解">
+        <figcaption>圖 10：出口國與進口國供需圖形及貿易前後消費者剩餘、生產者剩餘、總剩餘變化對照。</figcaption>
+      </figure>
+    </section>
+  </div>
+</body>
+</html>
